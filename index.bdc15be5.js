@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var t,a=function(t){return parseFloat(t.replace(/[^0-9.-]+/g,""))},e=document.querySelector("ul");(t=Array.from(e.children)).sort(function(t,e){var r=a(t.dataset.salary);return a(e.dataset.salary)-r}),t.forEach(function(t){return e.appendChild(t)}),console.log(Array.from(e.children).map(function(t){return{name:t.textContent.trim(),position:t.dataset.position,salary:a(t.dataset.salary),age:parseInt(t.dataset.age,10)}}))});
+//# sourceMappingURL=index.bdc15be5.js.map
